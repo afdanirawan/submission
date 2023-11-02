@@ -20,7 +20,7 @@ Dashboard analisis kualitas udara yang menggunakan Streamlit. Dashboard ini memu
 
 ```bash
 git clone https://github.com/afdanirawan/submission.git
-cd directory_of_your_repository
+cd submission
 ```
 
 2. Buat virtual environment dan aktifkan:
@@ -40,10 +40,9 @@ pip install -r requirements.txt
 4. Jalankan Streamlit app:
 
 ```bash
-cd dashboard
-streamlit run dashboard.py
+streamlit run dashboard/dashboard.py
 ```
 
 ## Data
 
-Data yang digunakan berasal dari file `main_data.csv`. Pastikan file ini berada dalam direktori yang sama dengan skrip Anda.
+Data yang digunakan berasal dari file `main_data.csv`. Pastikan file ini berada dalam direktori yang sama dengan skrip `dashboard.py`.
