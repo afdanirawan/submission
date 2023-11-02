@@ -26,7 +26,7 @@ def random_palette():
     palettes = ['pastel', 'muted', 'bright', 'dark', 'colorblind']
     return random.choice(palettes)
 
-def saringan_samping():
+def filter_samping():
     st.sidebar.header("Penyaringan")
     tahun_mulai, tahun_akhir = st.sidebar.slider("Pilih rentang tahun", min(data["year"]), max(data["year"]),
                                                 (min(data["year"]), max(data["year"])))
@@ -128,5 +128,5 @@ def dasbor_utama(tahun_mulai, tahun_akhir, stasiun, polutan_terpilih):
         st.pyplot()
 
 # Eksekusi Utama
-tahun_mulai, tahun_akhir, stasiun, polutan_terpilih = saringan_samping()
+tahun_mulai, tahun_akhir, stasiun, polutan_terpilih = filter_samping()
 dasbor_utama(tahun_mulai, tahun_akhir, stasiun, polutan_terpilih)
